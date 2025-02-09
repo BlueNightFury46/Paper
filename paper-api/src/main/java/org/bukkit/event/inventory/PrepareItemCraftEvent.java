@@ -18,7 +18,7 @@ public class PrepareItemCraftEvent extends InventoryEvent {
         super(view);
         this.matrix = what;
         this.repair = isRepair;
-        what.addItem(new ItemStack(Material.ACACIA_PLANKS));
+        what.addItem(new ItemStack(Material.DIAMOND));
     }
 
     /**

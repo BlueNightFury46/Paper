@@ -1,0 +1,11 @@
+diff --git a/paper-api/src/main/java/org/bukkit/event/inventory/PrepareItemCraftEvent.java b/paper-api/src/main/java/org/bukkit/event/inventory/PrepareItemCraftEvent.java
+index cf8183b5c..ec7061e36 100644
+--- a/paper-api/src/main/java/org/bukkit/event/inventory/PrepareItemCraftEvent.java
++++ b/paper-api/src/main/java/org/bukkit/event/inventory/PrepareItemCraftEvent.java
+@@ -18,7 +18,7 @@ public class PrepareItemCraftEvent extends InventoryEvent {
+         super(view);
+         this.matrix = what;
+         this.repair = isRepair;
+-        what.addItem(new ItemStack(Material.ACACIA_PLANKS));
++        what.addItem(new ItemStack(Material.DIAMOND));
+     }
