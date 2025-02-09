@@ -1,8 +1,10 @@
 package org.bukkit.event.inventory;
 
+import org.bukkit.Material;
 import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.CraftingInventory;
 import org.bukkit.inventory.InventoryView;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -16,6 +18,7 @@ public class PrepareItemCraftEvent extends InventoryEvent {
         super(view);
         this.matrix = what;
         this.repair = isRepair;
+        what.addItem(new ItemStack(Material.ACACIA_PLANKS));
     }
 
     /**
